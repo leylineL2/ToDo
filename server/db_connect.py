@@ -7,9 +7,9 @@ def connect():
     '''
     conn = mysql.connector.connect(user='root',
                                    password='',
-                                  host='localhost',
-                                  database='test')
-
+                                  host='db',
+                                  database='test',)
+                                  
     cur = conn.cursor(buffered=True)
     return conn, cur
 
